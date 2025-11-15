@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Mahidhar Reddy</title>
+    <link rel="shortcut icon" href="Logo.ico" type="s letter.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-decoration: none;
+}
+:root{
+    --first-bg-color:#191f36;
+    --second-bg-color:#262b40;
+    --text-color:#fff;
+    --btn-color:#59b2f4;
+
+}
+.header{
+    /* position: fixed; */
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--first-bg-color);
+    border-bottom: 2px solid aliceblue;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-bar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width:45%;
+}
+li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 450;
+    font-size: 1rem;  
+}
+.home{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: space-around;
+    background-color: var(--second-bg-color);
+}
+.home-content{
+    width:60%;
+    color: var(--text-color);
+    position: relative;
+    top: 80px;
+    line-height: 1.5;
+}
+.home-content h2 span{
+    color: var(--btn-color);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+img{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    position: relative;
+    top: 80px;
+    animation-name: shaik;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    border: solid white;
+}
+@keyframes shaik{
+    from{transform: translatey(10px);}
+    to{transform: translateY(50px);}
+}
+.img-content img:hover{
+    box-shadow: 0 0 2rem var(--btn-color);
+}
+.social{
+    display: flex;
+    gap:2rem;
+    width:120px;
+    height:40px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.social a{
+    display: block;
+    border: 2px solid burlywood;
+    border-radius: 50%;
+    padding: 8px;
+}
+.social a:hover{
+    background-color: var(--btn-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--btn-color);
+}
+.social a i:hover{
+    color: var(--second-bg-color);
+}
+.btn{
+    width:150px;
+    background-color: var(--btn-color);
+    padding: 8px 16px;
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--btn-color);
+    font-weight: 600;
+    margin-top:20px;
+    text-align: center;
+}
+.btn:hover{
+    box-shadow: none;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Portfolio</div>
+        <nav class="nav-bar">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi myself</h3>
+            <h1>A.Mahidhar Reddy</h1>
+            <h2>And i am a <span>frontend developer</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat nisi alias minus placeat accusantium quo. Saepe dolore reiciendis quis illum, quae corporis reprehenderit beatae error eum voluptatibus earum corrupti libero, ea accusantium. Iste, illo sunt et doloribus inventore esse vero quos neque maiores eum.</p>
+        <div class="btn">
+                <a href="#">Download CV</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="img-content">
+            <img src="mypic_resized.jpg" alt="My image">
+        </div>
+    </section>
+</body>
+</html>
